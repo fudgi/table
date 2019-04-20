@@ -1,4 +1,4 @@
-Ссылка на проект на GitPages [ссылке](https://fudgi.github.io/table/index.html)
+Ссылка на проект на GitPages [ссылке](http://a0282038.xsph.ru)
 
 Использованные в проекте технологии:
 
