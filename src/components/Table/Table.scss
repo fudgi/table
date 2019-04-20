@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+    border: 1px solid gray;
+    border-spacing: 0;
+    th {
+        border: 2px solid gray;
+        font-weight: bolder;
+        min-width: 40px;
+        cursor: pointer;
+        user-select: none;
+
+        &.selected {
+            background-color: aquamarine;
+        }
+        &.asc::after {
+            position: absolute;
+            content: "↑";
+        }
+        &.dsc::after {
+            position: absolute;
+            content: "↓";
+        }
+    }
+    td {
+        text-align: center;
+        border: 1px solid gray;
+    }
+    tr:hover {
+        cursor: pointer;
+        background-color: rgba(127, 255, 212, 0.329);
+    }
+}

@@ -1,0 +1,15 @@
+.selected-item {
+    padding: 20px;
+    textarea {
+        min-width: 200px;
+        width: 50%;
+    }
+}
+.selected-item__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.selected-item__part {
+    width: 50%;
+    min-width: 300px;
+}
