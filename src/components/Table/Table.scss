@@ -1,11 +1,13 @@
 table {
-    width: 100%;
+    width: 100vw;
+    font-size: 0.8rem;
     border: 1px solid gray;
     border-spacing: 0;
+    font-size: 1.25vmax;
     th {
         border: 2px solid gray;
         font-weight: bolder;
-        min-width: 40px;
+        // min-width: 40px;
         cursor: pointer;
         user-select: none;
 
@@ -13,11 +15,9 @@ table {
             background-color: aquamarine;
         }
         &.asc::after {
-            position: absolute;
             content: "↑";
         }
         &.dsc::after {
-            position: absolute;
             content: "↓";
         }
     }

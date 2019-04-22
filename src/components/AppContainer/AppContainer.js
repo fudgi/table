@@ -45,9 +45,13 @@ class AppContainer extends React.Component {
                     });
                 },
                 error => {
+                    let err = error.message;
+                    if (err == "Failed to fetch") {
+                        err = "Сервер недоступен";
+                    }
                     this.setState({
                         isLoaded: true,
-                        error
+                        error: err
                     });
                 }
             );
@@ -133,7 +137,7 @@ class AppContainer extends React.Component {
                 return (
                     <div className="message">
                         <img src={errorImage} />
-                        Ошибка: {error.message}
+                        Ошибка: {error}
                     </div>
                 );
             } else if (!isLoaded) {
@@ -152,8 +156,8 @@ class AppContainer extends React.Component {
                                 nextLabel={"→"}
                                 breakLabel={"..."}
                                 pageCount={totalPageCount}
-                                marginPagesDisplayed={2}
-                                pageRangeDisplayed={5}
+                                marginPagesDisplayed={1}
+                                pageRangeDisplayed={3}
                                 onPageChange={data =>
                                     this.pageChangeHandler(data.selected)
                                 }

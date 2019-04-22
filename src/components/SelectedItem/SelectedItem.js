@@ -12,7 +12,7 @@ class SelectedItem extends React.Component {
                 <div className="selected-item__content">
                     <div className="selected-item__part">
                         <h4>Описание:</h4>
-                        <textarea rows="10" value={description} />
+                        <textarea rows="6" value={description} />
                     </div>
                     <div className="selected-item__part">
                         <p>

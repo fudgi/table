@@ -15,6 +15,10 @@ $padding: 20px;
             }
         }
     }
+    .first-line__search {
+        display: flex;
+        justify-content: center;
+    }
 }
 .input-form {
     display: none;
@@ -53,5 +57,13 @@ $padding: 20px;
     .first-line__add {
         background-color: aquamarine;
         box-shadow: inset 0 0 5px 1px rgb(96, 207, 170);
+    }
+}
+
+@media (max-width: 500px) {
+    .first-line__search {
+        flex-grow: 1;
+        min-width: 100vw;
+        margin-bottom: $padding;
     }
 }

@@ -18,14 +18,39 @@ button {
     user-select: none;
     &:hover {
         cursor: pointer;
+        background-color: $base-color;
+        border-color: $darker-base-color;
     }
     &:focus {
         outline: 0;
     }
 }
+
+h3 {
+    font-size: 2vmax;
+}
+
+h4,
+label {
+    font-size: 1.5vmax;
+}
+
+p {
+    font-size: 1.3vmax;
+}
+
+textarea {
+    font-size: 1.2vmax;
+    min-width: 200px;
+    width: 50%;
+    border: 1px solid lightgray;
+}
+
 input {
     padding: $vertical-padding $side-padding;
     margin-right: $side-padding;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 5px;
     &:focus {
         outline-color: $base-color;
     }

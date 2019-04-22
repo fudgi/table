@@ -113,7 +113,7 @@ class ControlPanel extends React.Component {
                     </button>
                 </div>
                 <div className="input-form">
-                    <h2>Добавление данных в таблицу </h2>
+                    <h3>Добавление данных в таблицу </h3>
                     <form
                         className="input-form__form"
                         onChange={e => this.changeFormHangler(e)}
